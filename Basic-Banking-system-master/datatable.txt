@@ -1,0 +1,54 @@
+--
+-- Database: `banktransfer`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transferdata`
+--
+
+CREATE TABLE `transferdata` (
+  `S.no` int(11) NOT NULL,
+  `Fname` varchar(20) NOT NULL,
+  `Email` varchar(30) NOT NULL,
+  `Balance` int(11) NOT NULL,
+  `Date of transaction` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `transferdata`
+--
+
+INSERT INTO `transferdata` (`S.no`, `Fname`, `Email`, `Balance`, `Date of transaction`) VALUES
+(1, 'Sakshi Nayak', 'sakshi@gmail.com', 1000, '2021-07-03 09:34:02'),
+(2, 'Shubham jain', 'shubham@gmail.com', 2100, '2021-07-03 09:34:48'),
+(3, 'Mansi jain', 'mansi@gmail.com', 1200, '2021-07-03 09:38:56'),
+(4, 'Neetika shri', 'neetika@gmail.com', 1230, '2021-07-03 09:39:33'),
+(5, 'Preeti singh', 'preeti@gmail.com', 1500, '2021-07-03 09:41:33'),
+(6, 'dev jain', 'dev@gmail.com', 780, '2021-07-03 09:42:08'),
+(7, 'Aman jain', 'aman@gmail.com', 2300, '2021-07-03 09:43:36'),
+(8, 'Sneha Ahirwar', 'sneha@gmail.com', 1100, '2021-07-03 09:44:25'),
+(9, 'Ritka jain', 'ritika@gmail.com', 1300, '2021-07-03 09:44:44'),
+(10, 'Sanam puri', 'sanam@gmail.com', 1800, '2021-07-03 09:45:42');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `transferdata`
+--
+ALTER TABLE `transferdata`
+  ADD PRIMARY KEY (`S.no`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `transferdata`
+--
+ALTER TABLE `transferdata`
+  MODIFY `S.no` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+COMMIT;
